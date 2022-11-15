@@ -8,7 +8,7 @@ import { PatchProductCartController } from "../../../controllers/PatchProductCar
 const router = Router();
 
 router.get("/", GetProductCartController.get);
-router.post("/", AddProductCartController.post);
+router.post("/:id", AddProductCartController.post);
 router.delete("/:cartId", DeleteProductCartController.delete);
 router.patch("/:cartId", PatchProductCartController.patch);
 
